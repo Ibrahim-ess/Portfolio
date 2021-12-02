@@ -1,0 +1,14 @@
+aside {
+  width: 37%;
+  background-color: rgba(230, 230, 230, 0.4);
+  height: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.asideContent {
+  padding-top: 174px;
+  margin: 0 7%;
+}
+
+/*# sourceMappingURL=asideContent.css.map */

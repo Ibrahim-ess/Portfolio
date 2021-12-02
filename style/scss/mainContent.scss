@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Noto"; 
+    src: url("../../assets/fonts/Noto Sans V2.woff") format("woff"), 
+}
+
+@font-face {
+    font-family: "CentralLight"; 
+    src: url("../../assets/fonts/Central W01 Light.woff") format("woff"), 
+}
+
+main {
+    float: right;
+    width: 63%;
+    height: 100%;
+    position: relative;
+    z-index: 6;
+}
+
+header {
+    font-family: "CentralLight";
+    color: rgb(199, 199, 199);
+    text-align: center ;
+    
+    margin : {
+        top: 20px;
+        left : 20px;
+        right : 20px;
+    }
+    padding: 15px;
+    border : solid rgb(197, 197, 197) 1px;
+    h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        font-weight: normal;
+    }
+
+    h5 {
+        font-weight: normal;
+        font-size : 11px;
+        color: rgb(187, 187, 187);
+    }
+    &:hover{
+        text-shadow: 0 0 4px rgb(207, 207, 207);
+        box-shadow: #646464 0 0 6px 2px inset, #646464 0 0 6px 2px ;
+        transition: all .2s;
+    }
+}
+
+.mainContent {
+    margin: 60px 7% 0 5%;
+    width: 87%;
+    
+}
+
+.titleSection {
+    font-family: "Noto";
+    border-bottom: solid 2px rgb(150, 150, 150);
+    display:flex;
+    padding-left: 3px;
+    padding-bottom: 2px;
+    color: #3f3f3f;
+
+    h5{
+        font-size: 14px;
+        margin-left: 5px ;
+    }
+}
