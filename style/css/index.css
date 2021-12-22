@@ -1,40 +1,73 @@
+@font-face {
+  font-family: "Noto";
+  src: url("../../assets/fonts/Noto Sans V2.woff") format("woff");
+}
+@font-face {
+  font-family: "CentralLight";
+  src: url("../../assets/fonts/Central W01 Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Arnold";
+  src: url("../../assets/fonts/Arnold Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Isocteur";
+  src: url("../../assets/fonts/ISOCTEUR V1.woff") format("woff");
+}
 * {
   margin: 0;
 }
 
-html {
-  background-color: black;
-  height: 100%;
-}
-
 body {
-  margin: auto;
-  height: 850px;
-  width: 600px;
-  background-color: #fcfafa;
+  background-color: #0f0f0f;
 }
 
 .content {
-  height: 100%;
   position: relative;
   overflow: hidden;
+  height: 850px;
+  width: 600px;
+  background-color: #fcfafa;
+  margin: auto;
 }
 
+.title {
+  font-family: "Noto";
+}
+
+@keyframes showSquare2 {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+@keyframes showSquare3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-10deg);
+  }
+}
 .showSquare #square1 {
-  width: 800px;
-  height: 200px;
+  width: 670px;
+  height: 250px;
   background-color: #3A3937;
   position: absolute;
   z-index: 1;
-  transform: rotate(8deg);
-  top: -40px;
+  transform: rotate(10deg);
+  top: -90px;
   left: -5%;
 }
 .showSquare #square2 {
-  border-top: 290px solid #D9D9D9;
-  border-right: 420px solid transparent;
+  border-top: 300px solid #D9D9D9;
+  border-right: 425px solid transparent;
   position: absolute;
   z-index: 0;
+  transform-origin: bottom left;
+  animation: 2s showSquare2;
 }
 .showSquare #square3 {
   width: 100%;
@@ -42,14 +75,17 @@ body {
   background-color: #3A3937;
   position: absolute;
   z-index: 1;
-  transform: rotate(-8deg);
-  bottom: -90px;
-  right: -5%;
+  transform-origin: top left;
+  transform: rotate(0deg);
+  bottom: -125px;
+  right: -160px;
+  animation: 1.5s 2s showSquare3 forwards;
 }
 
 .icones {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
 }
 
 /*# sourceMappingURL=index.css.map */

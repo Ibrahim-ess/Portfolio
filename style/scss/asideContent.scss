@@ -7,8 +7,59 @@ aside {
 }
 .asideContent{
     padding : {
-        top: 174px;
+        top: 193px;
     }
     margin: 0 7%;
     
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 3px;
+            font-weight: 500;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(61, 61, 61);
+        }
+
+        .icones {
+            margin-right: 5px;
+            width : 13px;
+            height: 13px;
+        }
+    }
+
+    .asideSectionContent {
+        padding: 0;
+        margin : {
+            top : 10px;
+            left : 7px;
+            bottom: 30px;
+        }
+        font-size: 11px;
+        font-family: System-ui;
+        color: rgb(61, 61, 61);
+    }
+
+    .interests ul {
+        font-size: 13px;
+
+        li {
+            margin-bottom: 9px;
+        }
+        .icones {
+            margin-bottom: -12px;
+            padding: 4px;
+            width: 20px;
+            height: 20px;
+            border: solid 1px rgb(233, 233, 233);
+            background-color:white ;
+            border-radius: 20px; 
+        }
+        span {
+            font-size: 10px;
+            letter-spacing: -.5px;
+        }
+    }
 }
