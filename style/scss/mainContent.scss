@@ -34,7 +34,7 @@ header {
     }
 }
 
-.mainContent {
+.container {
     margin: 73px 5% 0 5%;
     width: 90%;
 }
@@ -53,18 +53,27 @@ header {
 
 .mainSectionContent {
     margin:20px 5px ;
-    .articleInformation {
-        font-size: 11px;
-        font-family: System-ui;
-        letter-spacing: -.2px;
-    }
 
     .article {
         margin-bottom: 15px;
     }
 
-    .articleDescription {
+    .articleTitle {
+        font-size: 11px;
+    }
+    .articleInformation {
+        font-size: 12px;
+        font-family: System-ui;
+        letter-spacing: -.2px;
+        padding-bottom: 5px;
+    }
+
+    ul {
+        padding-inline-start: 15px ;
+    }
+
+    .description {
         font-family: system-ui;
-        font-size: 9px;
+        font-size: 10px;
     }
 }

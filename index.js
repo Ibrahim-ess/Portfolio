@@ -6,7 +6,7 @@ class Animation {
 
     launchAnimations() {
         var i = 0
-        var speed = [1200, 800, 1000, 500, 300, 300, 300, 400, 700, 1200]
+        var speed = [1200, 800, 600, 500, 300, 200, 200, 400, 700, 1200]
         this.néonChange(i, speed) 
     }
 
@@ -37,6 +37,6 @@ class Animation {
 
 var animation = new Animation()
 window.onload=() => {
-    setTimeout(() => {animation.launchAnimations()},3200)
+    setTimeout(() => {animation.launchAnimations()},2500)
 }
 

@@ -17,18 +17,20 @@ header {
   border: solid #c5c5c5 1px;
   transition: all 0.5s;
 }
+
 header h2 {
   font-size: 32px;
   margin-bottom: 10px;
   font-weight: normal;
 }
+
 header h5 {
   font-size: 13px;
   color: #a7a7a7;
   font-weight: normal;
 }
 
-.container {
+.mainContent {
   margin: 73px 5% 0 5%;
   width: 90%;
 }
@@ -39,6 +41,7 @@ header h5 {
   padding-bottom: 5px;
   color: #222222;
 }
+
 .titleSection h5 {
   font-size: 14px;
   margin-left: 6px;
@@ -47,24 +50,22 @@ header h5 {
 .mainSectionContent {
   margin: 20px 5px;
 }
+
+.mainSectionContent .articleInformation {
+  font-size: 11px;
+  font-family: System-ui;
+  letter-spacing: -0.2px;
+}
+
 .mainSectionContent .article {
   margin-bottom: 15px;
 }
-.mainSectionContent .articleTitle {
-  font-size: 11px;
-}
-.mainSectionContent .articleInformation {
-  font-size: 12px;
-  font-family: System-ui;
-  letter-spacing: -0.2px;
-  padding-bottom: 5px;
-}
-.mainSectionContent ul {
-  padding-inline-start: 15px;
-}
-.mainSectionContent .description {
+
+.mainSectionContent .articleDescription {
   font-family: system-ui;
-  font-size: 10px;
+  font-size: 9px;
 }
+
+/*# sourceMappingURL=mainContent.css.map */
 
 /*# sourceMappingURL=mainContent.css.map */
