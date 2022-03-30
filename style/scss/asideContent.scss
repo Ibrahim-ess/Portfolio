@@ -1,5 +1,5 @@
 aside {
-    width: 37%;
+    width: 32%;
     background-color: rgb(230, 230, 230,.4);
     height: 100%;
     position: relative;
@@ -12,14 +12,14 @@ aside {
         background-color: #025a87;
         position: absolute;
         z-index: 1;
-        transform: rotate(10deg);
+        transform: rotate(7deg);
         transform-origin: top left;
-        top: -146px;
+        top: -144px;
     }
 }
 .asideContent{
     padding : {
-        top: 193px;
+        top: 175px;
     }
     margin: 0 7%;
     
@@ -46,32 +46,102 @@ aside {
         padding: 0;
         margin : {
             top : 10px;
-            left : 7px;
+            left : 4px;
             bottom: 30px;
         }
-        font-size: 11px;
+        font-size: 10px;
         font-family: System-ui;
         color: rgb(61, 61, 61);
     }
 
+    .skills ul {
+        list-style: circle;
+        margin-left: 0;
+        padding-inline-start: 20px;
+    }
+
     .interests ul {
-        font-size: 13px;
+        font-size: 11px;
 
         li {
-            margin-bottom: 9px;
+            display: flex;
+            align-items: center;
         }
         .icones {
-            margin-bottom: -12px;
             padding: 4px;
-            width: 20px;
-            height: 20px;
+            margin-right: 10px;
+            width: 21px;
+            height: 21px;
             border: solid 1px rgb(233, 233, 233);
             background-color:white ;
             border-radius: 20px; 
         }
-        span {
-            font-size: 10px;
+        .countries {
+            font-size: 9px;
             letter-spacing: -.5px;
         }
+
+        #travel {
+        }
+    }
+
+    .languages {
+
+        .asideSectionContent li{
+            font-weight: 700;
+        }
+        .progressBar {
+            display: inline-flex;
+            height: 6px;
+            width: 80px;
+            background: #122636;
+            float: right;
+            margin-right: 7px;
+            margin-top: 4px;
+            border-radius: 10px;
+    
+            &:before {
+                content: '';
+                background: #0475ad;
+                border-radius: 10px;
+                opacity: 0;
+            }
+        }
+    
+        /*
+         *  Progress Bar width
+         */
+    
+        #french:before {
+            width: 100%;
+            animation: fillBar 2s 4s forwards;
+        }
+    
+        #english:before {
+            width: 80%;
+            animation: fillBar 2s 5s forwards;
+        }
+    
+        #arab:before {
+            width: 40%;
+            animation: fillBar 2s 6s forwards;
+        }
+    
+        #spanish:before {
+            width: 60%;
+            animation: fillBar 2s 7s forwards;
+        }
+    }
+    
+
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
     }
 }

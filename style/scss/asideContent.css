@@ -4,6 +4,18 @@ aside {
   height: 100%;
   position: relative;
   z-index: 5;
+  overflow: hidden;
+}
+
+aside #square4 {
+  width: 900px;
+  height: 250px;
+  background-color: #025a87;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(10deg);
+  transform-origin: top left;
+  top: -146px;
 }
 
 .asideContent {
@@ -34,11 +46,17 @@ aside {
 .asideContent .asideSectionContent {
   padding: 0;
   margin-top: 10px;
-  margin-left: 7px;
+  margin-left: 4px;
   margin-bottom: 30px;
   font-size: 11px;
   font-family: System-ui;
   color: #3d3d3d;
+}
+
+.asideContent .skills ul {
+  list-style: circle;
+  margin-left: 0;
+  padding-inline-start: 20px;
 }
 
 .asideContent .interests ul {
@@ -60,7 +78,7 @@ aside {
 }
 
 .asideContent .interests ul span {
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: -0.5px;
 }
 

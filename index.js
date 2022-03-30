@@ -33,10 +33,20 @@ class Animation {
             header.style.textShadow = "0 0 4px rgb(200, 200, 200)"
         }
     }
+
+    hideHostAdvertise() {
+        if (document.querySelector("body").children[2]) {
+            var ad = document.querySelector("body")
+            ad.children[2].remove()
+        }
+    }
 } 
 
 var animation = new Animation()
 window.onload=() => {
+    animation.hideHostAdvertise()
     setTimeout(() => {animation.launchAnimations()},2500)
+    console.log("WELCOME TO MY FIRST PORTFOLIO")
+    console.log("THE REAL WEBSITE WILL COME SOON...")
 }
 

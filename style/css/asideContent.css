@@ -1,5 +1,5 @@
 aside {
-  width: 37%;
+  width: 32%;
   background-color: rgba(230, 230, 230, 0.4);
   height: 100%;
   position: relative;
@@ -12,13 +12,13 @@ aside #square4 {
   background-color: #025a87;
   position: absolute;
   z-index: 1;
-  transform: rotate(10deg);
+  transform: rotate(7deg);
   transform-origin: top left;
-  top: -146px;
+  top: -144px;
 }
 
 .asideContent {
-  padding-top: 193px;
+  padding-top: 175px;
   margin: 0 7%;
 }
 .asideContent ul {
@@ -40,30 +40,86 @@ aside #square4 {
 .asideContent .asideSectionContent {
   padding: 0;
   margin-top: 10px;
-  margin-left: 7px;
+  margin-left: 4px;
   margin-bottom: 30px;
-  font-size: 11px;
+  font-size: 10px;
   font-family: System-ui;
   color: #3d3d3d;
 }
+.asideContent .skills ul {
+  list-style: circle;
+  margin-left: 0;
+  padding-inline-start: 20px;
+}
 .asideContent .interests ul {
-  font-size: 13px;
+  font-size: 11px;
 }
 .asideContent .interests ul li {
-  margin-bottom: 9px;
+  display: flex;
+  align-items: center;
 }
 .asideContent .interests ul .icones {
-  margin-bottom: -12px;
   padding: 4px;
-  width: 20px;
-  height: 20px;
+  margin-right: 10px;
+  width: 21px;
+  height: 21px;
   border: solid 1px #e9e9e9;
   background-color: white;
   border-radius: 20px;
 }
-.asideContent .interests ul span {
-  font-size: 10px;
+.asideContent .interests ul .countries {
+  font-size: 9px;
   letter-spacing: -0.5px;
+}
+.asideContent .languages {
+  /*
+   *  Progress Bar width
+   */
+}
+.asideContent .languages .asideSectionContent li {
+  font-weight: 700;
+}
+.asideContent .languages .progressBar {
+  display: inline-flex;
+  height: 6px;
+  width: 80px;
+  background: #122636;
+  float: right;
+  margin-right: 7px;
+  margin-top: 4px;
+  border-radius: 10px;
+}
+.asideContent .languages .progressBar:before {
+  content: "";
+  background: #0475ad;
+  border-radius: 10px;
+  opacity: 0;
+}
+.asideContent .languages #french:before {
+  width: 100%;
+  animation: fillBar 2s 4s forwards;
+}
+.asideContent .languages #english:before {
+  width: 80%;
+  animation: fillBar 2s 5s forwards;
+}
+.asideContent .languages #arab:before {
+  width: 40%;
+  animation: fillBar 2s 6s forwards;
+}
+.asideContent .languages #spanish:before {
+  width: 60%;
+  animation: fillBar 2s 7s forwards;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=asideContent.css.map */

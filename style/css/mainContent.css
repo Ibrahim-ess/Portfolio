@@ -1,6 +1,6 @@
 main {
   float: right;
-  width: 63%;
+  width: 68%;
   height: 100%;
   position: relative;
   z-index: 6;
@@ -29,7 +29,7 @@ header h5 {
 }
 
 .container {
-  margin: 73px 5% 0 5%;
+  margin: 55px 5% 0 5%;
   width: 90%;
 }
 
@@ -40,18 +40,27 @@ header h5 {
   color: #222222;
 }
 .titleSection h5 {
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 6px;
+}
+
+#education {
+  margin-top: 20px;
 }
 
 .mainSectionContent {
   margin: 20px 5px;
 }
-.mainSectionContent .article {
-  margin-bottom: 15px;
+.mainSectionContent .date {
+  color: #002b41c9;
+  font-size: 11px;
 }
 .mainSectionContent .articleTitle {
-  font-size: 11px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.mainSectionContent .contenu {
+  border-left: solid 1px #0651774b;
 }
 .mainSectionContent .articleInformation {
   font-size: 12px;
@@ -59,12 +68,30 @@ header h5 {
   letter-spacing: -0.2px;
   padding-bottom: 5px;
 }
+.mainSectionContent .articleSubTitle {
+  font-style: italic;
+  font-family: System-ui;
+  font-size: 11px;
+  margin-bottom: 15px;
+}
 .mainSectionContent ul {
-  padding-inline-start: 15px;
+  padding-inline-start: 20px;
+  list-style-type: circle;
+  margin-bottom: 15px;
 }
 .mainSectionContent .description {
   font-family: system-ui;
   font-size: 10px;
+}
+.mainSectionContent .description li {
+  font-size: 9px;
+  line-height: 13px;
+}
+.mainSectionContent .missionTitle {
+  font-family: system-ui;
+  font-size: 10px;
+  margin-left: 5px;
+  margin-bottom: 3px;
 }
 
 /*# sourceMappingURL=mainContent.css.map */

@@ -30,7 +30,7 @@ header h5 {
   font-weight: normal;
 }
 
-.mainContent {
+.container {
   margin: 73px 5% 0 5%;
   width: 90%;
 }
@@ -51,19 +51,30 @@ header h5 {
   margin: 20px 5px;
 }
 
-.mainSectionContent .articleInformation {
+.mainSectionContent .articleTitle {
   font-size: 11px;
-  font-family: System-ui;
-  letter-spacing: -0.2px;
 }
 
-.mainSectionContent .article {
+.mainSectionContent .articleInformation {
+  font-size: 12px;
+  font-family: System-ui;
+  letter-spacing: -0.2px;
+  padding-bottom: 5px;
+}
+
+.mainSectionContent .articleSubTitle {
+  font-style: italic;
+}
+
+.mainSectionContent ul {
+  padding-inline-start: 20px;
+  list-style-type: circle;
   margin-bottom: 15px;
 }
 
-.mainSectionContent .articleDescription {
+.mainSectionContent .description {
   font-family: system-ui;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=mainContent.css.map */
