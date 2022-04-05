@@ -7,11 +7,11 @@ class Animation {
     launchAnimations() {
         var i = 0
         var speed = [1200, 800, 600, 500, 300, 200, 200, 400, 700, 1200]
-        this.néonChange(i, speed) 
+        this.neonChange(i, speed) 
     }
 
-    néonChange(i, speed) {
-        var header = document.querySelector("header")
+    neonChange(i, speed) {
+        var header = document.querySelector(".header")
         if(i<=10) {
             setTimeout(() => {
                 if (this.néon == false) {
@@ -25,13 +25,27 @@ class Animation {
                     this.néon = false
                 }
                 i++
-                this.néonChange(i, speed)
+                this.neonChange(i, speed)
             },speed[i])
         }
         else {
             header.style.boxShadow = "#646464 0 0 6px 2px inset, #646464 0 0 6px 2px"
             header.style.textShadow = "0 0 4px rgb(200, 200, 200)"
+            header.style.transition = "all .3s"
+
+            header.addEventListener('mousemove', () => this.neonOn(header))
+            header.addEventListener('mouseout', () => this.neonOff(header))
         }
+    }
+
+    neonOn(element) {
+        element.style.textShadow = "0 0 10px rgb(240, 240, 240)"
+        element.style.boxShadow = "rgb(200, 200, 200) 0 0 6px 2px inset, rgb(200, 200, 200) 0 0 6px 2px"
+    }
+
+    neonOff(element){
+        element.style.boxShadow = "#646464 0 0 6px 2px inset, #646464 0 0 6px 2px"
+        element.style.textShadow = "0 0 4px rgb(200, 200, 200)"
     }
 
     hideHostAdvertise() {

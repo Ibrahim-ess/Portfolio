@@ -106,6 +106,7 @@ aside #square4 {
   content: "";
   background: #0475ad;
   border-radius: 10px;
+  opacity: 0;
 }
 .asideContent .languages #french:before {
   width: 100%;
