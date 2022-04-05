@@ -81,6 +81,7 @@ body {
         z-index: 0;
         transform-origin: bottom left;
         animation : 2s showSquare2 forwards;
+        transform: rotate(-2deg);
     }
 
     #square3 {
@@ -91,6 +92,7 @@ body {
         z-index: 1;
         transform-origin: top left;
         transform: rotate(0deg);
+        //transform: rotate(-10deg);
         bottom: -125px;
         right: -160px;
         animation : 1.5s 2s showSquare3 forwards;

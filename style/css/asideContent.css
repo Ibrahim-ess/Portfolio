@@ -46,10 +46,23 @@ aside #square4 {
   font-family: System-ui;
   color: #3d3d3d;
 }
+.asideContent .asideSectionContent .skillList {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  position: relative;
+  left: -4px;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.asideContent .asideSectionContent .skillItem {
+  font-weight: 500;
+  font-style: italic;
+}
 .asideContent .skills ul {
   list-style: circle;
   margin-left: 0;
-  padding-inline-start: 20px;
+  padding-inline-start: 16px;
 }
 .asideContent .interests ul {
   font-size: 11px;
@@ -93,7 +106,6 @@ aside #square4 {
   content: "";
   background: #0475ad;
   border-radius: 10px;
-  opacity: 0;
 }
 .asideContent .languages #french:before {
   width: 100%;

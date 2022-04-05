@@ -52,12 +52,27 @@ aside {
         font-size: 10px;
         font-family: System-ui;
         color: rgb(61, 61, 61);
+
+        .skillList {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            position: relative;
+            left: -4px;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .skillItem {
+            font-weight: 500;
+            font-style: italic;
+        }
     }
 
     .skills ul {
         list-style: circle;
         margin-left: 0;
-        padding-inline-start: 20px;
+        padding-inline-start: 16px;
     }
 
     .interests ul {
@@ -80,9 +95,6 @@ aside {
             font-size: 9px;
             letter-spacing: -.5px;
         }
-
-        #travel {
-        }
     }
 
     .languages {
@@ -104,7 +116,7 @@ aside {
                 content: '';
                 background: #0475ad;
                 border-radius: 10px;
-                opacity: 0;
+                //opacity: 0;
             }
         }
     

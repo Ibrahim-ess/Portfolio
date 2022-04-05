@@ -15,8 +15,8 @@ class Animation {
         if(i<=10) {
             setTimeout(() => {
                 if (this.néon == false) {
-                    header.style.textShadow = "0 0 4px rgb(240, 240, 240)"
-                    header.style.boxShadow = "rgb(150, 150, 150) 0 0 6px 2px inset, rgb(150, 150, 150) 0 0 6px 2px"
+                    header.style.textShadow = "0 0 10px rgb(240, 240, 240)"
+                    header.style.boxShadow = "rgb(200, 200, 200) 0 0 6px 2px inset, rgb(200, 200, 200) 0 0 6px 2px"
                     this.néon = true
                 } 
                 else {
@@ -41,6 +41,7 @@ class Animation {
         }
     }
 } 
+
 
 var animation = new Animation()
 window.onload=() => {
