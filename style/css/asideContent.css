@@ -59,6 +59,10 @@ aside #square4 {
   font-weight: 500;
   font-style: italic;
 }
+.asideContent .contact .icones {
+  position: relative;
+  top: 2px;
+}
 .asideContent .skills ul {
   list-style: circle;
   margin-left: 0;

@@ -11,7 +11,7 @@ class Animation {
     }
 
     neonChange(i, speed) {
-        var header = document.querySelector(".header")
+        var header = document.querySelector("header")
         if(i<=10) {
             setTimeout(() => {
                 if (this.néon == false) {
