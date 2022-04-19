@@ -1,95 +1,133 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@font-face {
-  font-family: "Noto";
-  src: url("../../assets/fonts/Noto Sans V2.woff") format("woff");
-}
 @font-face {
   font-family: "CentralLight";
   src: url("../../assets/fonts/Central W01 Light.woff") format("woff");
 }
-@font-face {
-  font-family: "Arnold";
-  src: url("../../assets/fonts/Arnold Regular.woff") format("woff");
-}
-@font-face {
-  font-family: "Isocteur";
-  src: url("../../assets/fonts/ISOCTEUR V1.woff") format("woff");
-}
-* {
+html, body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-body {
-  background-color: #0f0f0f;
-}
-
-.content {
-  position: relative;
+.chooseLanguage {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  background: #122636;
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
-  height: 880px;
-  max-width: 600px;
-  width: 100vh;
-  background-color: #fcfafa;
-  margin: auto;
+  opacity: 1;
 }
 
-.title {
-  font-family: "Noto";
+.listLanguages {
+  display: flex;
+  gap: 400px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes showSquare2 {
+#divBoxFrench {
+  top: 75px;
+  animation: translateFrench 2s;
+}
+
+#divBoxEnglish {
+  bottom: 75px;
+  animation: translateEnglish 2s;
+}
+
+.divBox {
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.divBox #boxTriangleFrench {
+  position: absolute;
+  left: -114px;
+  bottom: -50px;
+  transform: rotate(22deg);
+}
+.divBox #boxTriangleEnglish {
+  position: absolute;
+  left: -155px;
+  bottom: -95px;
+  transform: rotate(-160deg);
+}
+.divBox .lineBottom {
+  position: absolute;
+  bottom: 1px;
+  left: 7px;
+  width: 404px;
+  height: 0.5px;
+  background: #a4a4a4;
+  box-shadow: #c8c8c8 0 0 5px 2px;
+  transition: 0.5s;
+}
+.divBox .triangle {
+  position: relative;
+  width: 420px;
+  height: 208px;
+  overflow: hidden;
+}
+.divBox .triangle::before {
+  content: "";
+  position: absolute;
+  top: 81px;
+  left: 58px;
+  width: 335px;
+  height: 288px;
+  transform: rotate(45deg);
+  border-bottom-color: #000;
+  box-shadow: #c8c8c8 0 0 6px 2px inset, #c8c8c8 0 0 6px 2px;
+  transition: 0.2s;
+}
+.divBox:hover .lineBottom {
+  box-shadow: white 0 0 5px 2px;
+  transition: 0.2s;
+}
+.divBox:hover .triangle::before {
+  box-shadow: white 0 0 6px 2px inset, white 0 0 6px 2px;
+  transition: 0.2s;
+}
+.divBox:hover .language {
+  color: white;
+  transition: 0.2s;
+  text-shadow: white 0px 0px 3px;
+}
+.divBox .language {
+  color: #c5c5c5;
+  font-family: CentralLight;
+  font-size: 35px;
+  position: relative;
+  z-index: 5;
+}
+
+@keyframes translateFrench {
   from {
-    transform: rotate(-90deg);
+    transform: translate(-150vw, 100vh);
   }
-  to {
-    transform: rotate(-2deg);
+  50% {
+    transform: translate(40vw, -30vh);
   }
 }
-@keyframes showSquare3 {
+@keyframes translateEnglish {
   from {
-    transform: rotate(0deg);
+    transform: translate(150vw, -100vh);
   }
-  to {
-    transform: rotate(-10deg);
+  50% {
+    transform: translate(-40vw, 30vh);
   }
 }
-.showSquare #square1 {
-  width: 900px;
-  height: 250px;
-  background-color: #122636;
-  position: absolute;
-  z-index: 1;
-  transform: rotate(7deg);
-  transform-origin: top left;
-  top: -160px;
-  left: -135px;
+@keyframes disapearChooseLanguageMenu {
+  100% {
+    opacity: 0;
+  }
 }
-.showSquare #square2 {
-  border-top: 265px solid #D9D9D9;
-  border-right: 400px solid transparent;
-  position: absolute;
-  z-index: 0;
-  transform-origin: bottom left;
-  animation: 2s showSquare2 forwards;
-  transform: rotate(-2deg);
-}
-.showSquare #square3 {
-  width: 100%;
-  height: 100px;
-  background-color: #122636;
-  position: absolute;
-  z-index: 1;
-  transform-origin: top left;
-  transform: rotate(0deg);
-  bottom: -125px;
-  right: -160px;
-  animation: 1.5s 2s showSquare3 forwards;
-}
-
-.icones {
-  width: 15px;
-  height: 15px;
-  margin-top: 3px;
+@keyframes languageChoosed {
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

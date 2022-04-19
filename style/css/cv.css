@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
   font-family: "Noto";
   src: url("../../assets/fonts/Noto Sans V2.woff") format("woff");
@@ -19,7 +20,7 @@
 }
 
 body {
-  background-color: #0f0f0f;
+  background-color: #223544;
 }
 
 .content {
@@ -36,14 +37,6 @@ body {
   font-family: "Noto";
 }
 
-@keyframes showSquare2 {
-  from {
-    transform: rotate(-90deg);
-  }
-  to {
-    transform: rotate(0);
-  }
-}
 @keyframes showSquare3 {
   from {
     transform: rotate(0deg);
@@ -58,21 +51,19 @@ body {
   background-color: #122636;
   position: absolute;
   z-index: 1;
-  transform: rotate(10deg);
+  transform: rotate(7deg);
   transform-origin: top left;
-  top: -170px;
+  top: -160px;
   left: -135px;
 }
-
 .showSquare #square2 {
-  border-top: 300px solid #D9D9D9;
-  border-right: 425px solid transparent;
+  border-top: 265px solid #D9D9D9;
+  border-right: 400px solid transparent;
   position: absolute;
   z-index: 0;
   transform-origin: bottom left;
-  animation: 2s showSquare2;
+  transform: rotate(-2deg);
 }
-
 .showSquare #square3 {
   width: 100%;
   height: 100px;
@@ -83,15 +74,13 @@ body {
   transform: rotate(0deg);
   bottom: -125px;
   right: -160px;
-  animation: 1.5s 2s showSquare3 forwards;
+  animation: 1.5s 6s showSquare3 forwards;
 }
 
 .icones {
   width: 15px;
   height: 15px;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
-/*# sourceMappingURL=index.css.map */
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=cv.css.map */

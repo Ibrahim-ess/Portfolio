@@ -22,7 +22,7 @@ aside {
         top: 175px;
     }
     margin: 0 7%;
-    
+    overflow: hidden;
     ul {
         list-style: none;
         li {
@@ -73,6 +73,29 @@ aside {
         .icones {
             position: relative;
             top: 2px;
+        }
+
+        li:hover {
+            position: relative;
+            &::before {
+                content: '';
+                height: 2px;
+                width: 50%;
+                position: absolute;
+                bottom: -4px;
+                background: #0475ad;
+                animation: underlineLeft 1.2s forwards;
+            }
+
+            &::after {
+                content: '';
+                height: 2px;
+                width: 50%;
+                position: absolute;
+                bottom: -4px;
+                background: #0475ad;
+                animation: underlineRight 1.2s forwards;
+            }
         }
     }
 
@@ -161,5 +184,33 @@ aside {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes underlineLeft {
+    0% {
+        right: 100%;
+    }
+
+    50% {
+        right: 0;
+    }
+
+    100%{
+        right: -100%;
+    }
+}
+
+@keyframes underlineRight {
+    0% {
+        left: 100%;
+    }
+
+    50% {
+        left: 0;
+    }
+
+    100%{
+        left: -100%;
     }
 }

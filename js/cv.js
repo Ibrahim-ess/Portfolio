@@ -58,10 +58,15 @@ class Animation {
 
 
 var animation = new Animation()
-window.onload=() => {
-    animation.hideHostAdvertise()
-    setTimeout(() => {animation.launchAnimations()},2500)
-    console.log("WELCOME TO MY FIRST PORTFOLIO")
-    console.log("THE REAL WEBSITE WILL COME SOON...")
-}
+var interval = setInterval(()=> {
+    if(showCV) {
+        animation.hideHostAdvertise()
+        setTimeout(() => {
+            animation.launchAnimations()
+        },1000)
+        clearInterval(interval)
+    } 
+},500)
+
+
 
