@@ -61,9 +61,7 @@ var animation = new Animation()
 var interval = setInterval(()=> {
     if(showCV) {
         animation.hideHostAdvertise()
-        setTimeout(() => {
-            animation.launchAnimations()
-        },1000)
+        animation.launchAnimations()
         clearInterval(interval)
     } 
 },500)
