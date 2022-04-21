@@ -1,3 +1,4 @@
+
 var showCV = false
 console.log("WELCOME TO MY FIRST PORTFOLIO")
 console.log("THE REAL WEBSITE WILL COME SOON...")
@@ -6,7 +7,7 @@ function displayCV(el, language) {
     slideAnimation(el, language)
 
     var body = document.querySelector("body")
-    axios.get(`http://localhost:3000/${language}`)
+    axios.get(`/${language}`)
         .then((response) => {
             var div = document.createElement("div")
             div.className="content"
