@@ -95,7 +95,7 @@ html,body {
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:1100px) {
 
     .listLanguages {
         gap: 400px;
@@ -143,7 +143,101 @@ html,body {
     }
 }
 
-@media (max-width:425px) {
+@media (min-width:800px) and (max-width:1099px) {
+    .listLanguages {
+        gap: 190px;
+    }
+
+    #divBoxFrench {
+        top : 75px;
+        animation: translateFrench 2s ;
+    }
+    
+    #divBoxEnglish {
+        bottom : 75px;
+        animation: translateEnglish 2s ;
+    }
+
+    #boxTriangleFrench {
+        left: -120px;
+        bottom: -48px;
+    }
+
+    #boxTriangleEnglish {
+        left: -170px;
+        bottom: -120px;
+    }
+
+    .lineBottom {
+        left: 23px;
+        width: 373px;
+        bottom: 1px;
+    }
+
+    .triangle {
+        width: 420px;
+        height: 208px;
+        &::before{
+            top: 99px;
+            left: 58px;
+            width: 335px;
+            height: 288px;
+        }
+    }
+
+    .language {
+        font-size: 31px;
+    }
+}
+
+@media (min-width:551px) and (max-width:799px) {
+    .listLanguages {
+        gap: 100px;
+    }
+
+    #divBoxFrench {
+        top : 75px;
+        animation: translateFrench 2s ;
+    }
+    
+    #divBoxEnglish {
+        bottom : 75px;
+        animation: translateEnglish 2s ;
+    }
+
+    #boxTriangleFrench {
+        left: -111px;
+        bottom: -42px;
+    }
+
+    #boxTriangleEnglish {
+        left: -174px;
+        bottom: -128px;
+    }
+
+    .lineBottom {
+        left: 59px;
+        width: 299px;
+        bottom: 1px;
+    }
+
+    .triangle {
+        width: 420px;
+        height: 208px;
+        &::before{
+            top: 135px;
+            left: 58px;
+            width: 335px;
+            height: 288px;
+        }
+    }
+
+    .language {
+        font-size: 29px;
+    }
+}
+
+@media (max-width:550px) {
     .listLanguages {
         flex-direction: column;
         gap: 300px;
@@ -192,6 +286,9 @@ html,body {
         font-size: 26px;
     }
 }
+
+
+/* KEYFRAMES */ 
 
 @keyframes mobileTranslateFrench {
     from {
