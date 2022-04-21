@@ -8,13 +8,13 @@ main {
 
 header {
   font-family: "CentralLight";
-  color: #d4d4d4;
+  color: rgb(212, 212, 212);
   text-align: center;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 15px;
-  border: solid #c5c5c5 1px;
+  border: solid rgb(197, 197, 197) 1px;
   transition: all 0.5s;
 }
 header h2 {
@@ -24,7 +24,7 @@ header h2 {
 }
 header h5 {
   font-size: 11px;
-  color: #a7a7a7;
+  color: rgb(167, 167, 167);
   font-weight: normal;
 }
 
@@ -34,7 +34,7 @@ header h5 {
 }
 
 .titleSection {
-  border-bottom: solid 2px #8a8a8a;
+  border-bottom: solid 2px rgb(138, 138, 138);
   display: flex;
   padding-bottom: 5px;
   color: #222222;
@@ -52,7 +52,7 @@ header h5 {
   margin: 20px 5px;
 }
 .mainSectionContent .date {
-  color: #002b41b0;
+  color: rgba(0, 43, 65, 0.6901960784);
   font-size: 11px;
 }
 .mainSectionContent .articleTitle {
@@ -60,7 +60,7 @@ header h5 {
   margin-bottom: 5px;
 }
 .mainSectionContent .contenu {
-  border-left: solid 1px #0651774b;
+  border-left: solid 1px rgba(6, 81, 119, 0.2941176471);
 }
 .mainSectionContent .articleInformation {
   font-size: 12px;

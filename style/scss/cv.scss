@@ -94,3 +94,9 @@ body {
     margin-top: 3px;
 }
 
+@media (max-width:425px) {
+    .content {
+        zoom: .65;
+    }
+}
+

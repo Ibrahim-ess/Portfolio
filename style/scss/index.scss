@@ -22,15 +22,9 @@ html,body {
 
 .listLanguages {
     display: flex;
-    gap: 400px;
     height: 100%;
     justify-content: center;
     align-items: center;
-}
-
-#divBoxFrench {
-    top : 75px;
-    animation: translateFrench 2s ;
 }
 
 #divBoxEnglish {
@@ -45,23 +39,16 @@ html,body {
 
     #boxTriangleFrench {
         position: absolute;
-        left: -114px;
-        bottom: -50px;
         transform: rotate(22deg);
     }
 
     #boxTriangleEnglish {
         position: absolute;
-        left: -155px;
-        bottom: -95px;
         transform: rotate(-160deg);
     }
 
     .lineBottom {
         position: absolute;
-        bottom: 1px;
-        left: 7px;
-        width: 404px;
         height: 0.5px;
         background: #a4a4a4;
         box-shadow: #c8c8c8 0 0 5px 2px;
@@ -70,16 +57,10 @@ html,body {
 
     .triangle {
         position: relative;
-        width: 420px;
-        height: 208px;
         overflow: hidden;
         &::before{
             content: "";
             position: absolute;
-            top: 81px;
-            left: 58px;
-            width: 335px;
-            height: 288px;
             transform: rotate(45deg);
             border-bottom-color: #000;
             box-shadow: #c8c8c8 0 0 6px 2px inset, #c8c8c8 0 0 6px 2px;
@@ -109,9 +90,124 @@ html,body {
     .language {
         color : rgb(197, 197, 197);
         font-family: CentralLight;
-        font-size: 35px;
         position: relative;
         z-index: 5;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .listLanguages {
+        gap: 400px;
+    }
+
+    #divBoxFrench {
+        top : 75px;
+        animation: translateFrench 2s ;
+    }
+    
+    #divBoxEnglish {
+        bottom : 75px;
+        animation: translateEnglish 2s ;
+    }
+
+    #boxTriangleFrench {
+        left: -114px;
+        bottom: -50px;
+    }
+
+    #boxTriangleEnglish {
+        left: -155px;
+        bottom: -95px;
+    }
+
+    .lineBottom {
+        left: 7px;
+        width: 404px;
+        bottom: 1px;
+    }
+
+    .triangle {
+        width: 420px;
+        height: 208px;
+        &::before{
+            top: 81px;
+            left: 58px;
+            width: 335px;
+            height: 288px;
+        }
+    }
+
+    .language {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:425px) {
+    .listLanguages {
+        flex-direction: column;
+        gap: 300px;
+    }
+
+    #divBoxFrench {
+        left: 25px;
+        top : 70px;
+        animation: mobileTranslateFrench 2s ;
+    }
+    
+    #divBoxEnglish {
+        right: 25px;
+        bottom : 70px;
+        animation: mobileTranslateEnglish 2s ;
+    }
+
+    #boxTriangleFrench {
+        left: -112px;
+        bottom: -37px;
+    }
+
+    #boxTriangleEnglish {
+        left: -183px;
+        bottom: -141px;
+    }
+
+    .lineBottom {
+        left: 81px;
+        width: 255px;
+        bottom: 0;
+    }
+
+    .triangle {
+        width: 420px;
+        height: 208px;
+        &::before{
+            top: 130px;
+            left: 108px;
+            width: 215px;
+            height: 196px;
+        }
+    }
+
+    .language {
+        font-size: 26px;
+    }
+}
+
+@keyframes mobileTranslateFrench {
+    from {
+        transform: translate(80vw, -100vh);
+    }
+    50% {
+        transform: translate(-20vw, 25vh);
+    }
+}
+
+@keyframes mobileTranslateEnglish {
+    from {
+        transform: translate(-80vw, 100vh);
+    }
+    50%{
+        transform: translate(20vw, -25vh);
     }
 }
 
