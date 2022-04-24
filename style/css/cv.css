@@ -94,5 +94,13 @@ body {
     zoom: 0.835;
   }
 }
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .safari_only {
+      color: #0000FF;
+      background-color: #CCCCCC;
+    }
+  }
+}
 
 /*# sourceMappingURL=cv.css.map */
