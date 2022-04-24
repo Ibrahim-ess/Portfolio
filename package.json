@@ -30,7 +30,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku": "heroku",
-    "sass" : "sass --watch style/scss:style/css"
+    "sass": "sass --watch style/scss:style/css"
   },
   "author": "",
   "license": "ISC"

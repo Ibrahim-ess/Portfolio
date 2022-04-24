@@ -85,7 +85,8 @@ body {
 
 @media (max-width: 500px) {
   .content {
-    zoom: 0.6;
+    transform: scale(0.6);
+    transform-origin: top left;
   }
 }
 @media (min-width: 501px) and (max-width: 599px) {

@@ -96,7 +96,8 @@ body {
 
 @media (max-width:500px) {
     .content {
-        zoom: .6;
+        transform : scale(.6);
+        transform-origin: top left;
     }
 }
 
