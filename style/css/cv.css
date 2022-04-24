@@ -100,7 +100,7 @@ body {
       height: 900px !important;
     }
 
-    .asideContent ul {
+    .asideContent .skills ul {
       padding-inline-start: 18px !important;
     }
     .asideContent .skillList {
@@ -109,6 +109,10 @@ body {
 
     .title {
       letter-spacing: -1px;
+    }
+
+    .description {
+      letter-spacing: -0.3px;
     }
   }
 }

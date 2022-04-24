@@ -114,7 +114,7 @@ body {
     }
 
     .asideContent {
-        ul {
+        .skills ul {
             padding-inline-start: 18px !important;
         }
         .skillList {
@@ -124,6 +124,9 @@ body {
 
     .title {
         letter-spacing: -1px;
+    }
+    .description {
+        letter-spacing: -.3px;
     }
 }}
 
