@@ -109,12 +109,21 @@ body {
 
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) {
+    .content {
+        height: 900px !important;
+    }
 
-    .safari_only { 
-        
-        color:#0000FF; 
-        background-color:#CCCCCC; 
+    .asideContent {
+        ul {
+            padding-inline-start: 18px !important;
+        }
+        .skillList {
+            grid-template-columns: 52px 1fr !important;
+        }
+    }
 
+    .title {
+        letter-spacing: -1px;
     }
 }}
 
